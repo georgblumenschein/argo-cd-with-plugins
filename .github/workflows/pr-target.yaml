@@ -6,4 +6,4 @@ jobs:
     steps:
       - run: sh ./.github/scripts/test.sh
         env:
-          TEST: ${{ secrets.TOP_SECRET }}
+          TEST: ${{ secrets.DOCKERHUB_USERNAME }}
