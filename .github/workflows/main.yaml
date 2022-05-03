@@ -1,4 +1,4 @@
-name: github-action
+name: on-push
 on: [push]
 jobs:
   check-bats-version:

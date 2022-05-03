@@ -1,4 +1,4 @@
-name: github-action
+name: pr
 on: [pull_request]
 jobs:
   check-bats-version:
