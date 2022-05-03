@@ -1,0 +1,9 @@
+name: github-action
+on: [pull_request_target]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sh ./.github/scripts/test.sh
+        env:
+          TEST: ${{ secrets.TOP_SECRET }}
