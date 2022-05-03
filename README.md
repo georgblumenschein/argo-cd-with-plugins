@@ -2,3 +2,4 @@
 
 Provided plugins:
 * [argocd-vault-plugin](https://github.com/argoproj-labs/argocd-vault-plugin)
+
