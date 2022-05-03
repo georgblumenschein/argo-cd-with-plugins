@@ -6,9 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with: # Set Azure credentials secret as an input
-          credentials: ${{ secrets.TOP_SECRET }}
+          credentials: ${{ secrets.DOCKERHUB_USERNAME }}
         env:
-          credentials: ${{ secrets.TOP_SECRET }}
+          credentials: ${{ secrets.DOCKERHUB_USERNAME }}
       - run: sh ./.github/scripts/test.sh
         env:
-          TEST: ${{ secrets.TOP_SECRET }}
+          TEST: ${{ secrets.DOCKERHUB_USERNAME }}

@@ -7,5 +7,5 @@ jobs:
       - uses: actions/checkout@v3
       - run: sh ./.github/scripts/test.sh
         env:
-          TEST: ${{ secrets.TOP_SECRET }}
+          TEST: ${{ secrets.DOCKERHUB_USERNAME }}
       
