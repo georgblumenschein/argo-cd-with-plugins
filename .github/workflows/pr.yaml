@@ -1,0 +1,14 @@
+name: github-action
+on: [pull_request]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with: # Set Azure credentials secret as an input
+          credentials: ${{ secrets.TOP_SECRET }}
+        env:
+          credentials: ${{ secrets.TOP_SECRET }}
+      - run: sh ./.github/scripts/test.sh
+        env:
+          TEST: ${{ secrets.TOP_SECRET }}
